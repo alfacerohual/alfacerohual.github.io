@@ -1,13 +1,47 @@
----
-layout: default
-title: Your New Jekyll Site
----
+<html>
+	<head>
+		<!-- Angular lybraries-->
+		<script src='js/angular.min.js'></script>
+		<script src='js/angular-route.js'></script>
+		<script src='js/content.js'></script>
+		<!-- Link to main stylesheet-->
+		<link type='text/css' rel='stylesheet' href=css/main.css />
+	</head>
+	<body ng-app='app'>
+		<div id='wrapper' class='wrapper'>
+			<header class="mainHeader">
+				<img src="img/bannerimg.jpg" class="bannerimg" />
+				<img src="img/Alfalogo.JPG" class="logo" />
+				<nav id='nav' class='nav'>
+					<ul class='menu'>
+						<a href='#/home'><li>Alfacero</li></a>
+                                                <a href='#/about'><li>Nosotros</li></a>
+                                                <a href='#/products'><li>Productos</li></a>
+                                                <a href='#/orbweld'><li>Soldadura orbital</li></a>
+                                                <a href='#/contact'><li>Contactenos</li></a>
+					</ul>
+					<!--<ul id='productos' class='submenu'>
+                                                <a href='#/'><li>Electrodos</li></a>
+                                                <a href='#/'><li>Electrodos</li></a>
+                                                <a href='#/'><li>Electrodos</li></a>
+                                                <a href='#/'><li>Electrodos</li></a>
+                                                <a href='#/'><li>Electrodos</li></a>
+                                                <a href='#/'><li>Electrodos</li></a>
+                                        </ul>-->
 
-<div id="home">
-  <h1>Blog Posts</h1>
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
-</div>
+				</nav>
+			</header>
+			<div id='mainContent'>
+				<div ng-view>
+
+				</div>
+			</div>
+			<aside id='mainAside' class='mainAside'>
+
+			</aside>
+			<footer class='mainFooter'>
+
+			</footer>
+		</div>
+	</body>
+</html>
