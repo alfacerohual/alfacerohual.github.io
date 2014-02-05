@@ -59,6 +59,15 @@ body {
 	overflow:hidden;
 }
 
+.articleComplete{
+	background-color:white;
+        float:left;
+        width:97%;
+        padding-left:1%;
+        padding-right:1%;
+        overflow:hidden;
+}
+
 #articleContentLeft{
 	margin-right:1%;
 }
