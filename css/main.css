@@ -3,7 +3,7 @@
 }
 
 body {
-	width: 70%;
+	width: 80%;
 	margin-left: auto;
 	margin-right: auto;
 	background-color: #D8D8D8;
@@ -18,7 +18,7 @@ body {
 	height: 180px;
 	position: fixed;
 	top: 0px;
-	width: 70%;
+	width: 80%;
 }
 
 .bannerimg {
@@ -68,7 +68,7 @@ body {
 }
 
 nav{
-	height: 45px;
+	height: 47px;
 	margin-top: 132;
 	background: black;
 	position: absolute;
@@ -129,7 +129,7 @@ nav a:hover li{
 }
 
 .mainFooter{
-	height: 45px;
+	height: 115px;
 	margin-top: 4px;
 	background-color:white;
 	width:100%;
