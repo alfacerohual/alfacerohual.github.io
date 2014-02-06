@@ -3,7 +3,7 @@
 }
 
 body {
-	width: 70%;
+	width: 80%;
 	margin-left: auto;
 	margin-right: auto;
 	background-color: #D8D8D8;
@@ -18,7 +18,7 @@ body {
 	height: 180px;
 	position: fixed;
 	top: 0px;
-	width: 70%;
+	width: 80%;
 }
 
 .bannerimg {
@@ -40,14 +40,14 @@ body {
 	margin-left: 0;
 	margin-top: 0;
 	margin-right: 25%;
-	float: left;
+	//float: left;
 	width: 77%;
 	//background-color: blue;
 }
 
-.asides{
+/*.asides{
 	background-color:gray;
-}
+}*/
 
 /* splited content in div content*/
 .articleContentSp{
@@ -56,10 +56,28 @@ body {
 	width:47%;
 	padding-left:1%;
 	padding-right:1%;
+	overflow:hidden;
+}
+
+.articleComplete{
+	background-color:white;
+        float:left;
+        width:97%;
+        padding-left:1%;
+        padding-right:1%;
+        overflow:hidden;
+}
+
+#articleContentLeft{
+	margin-right:1%;
+}
+
+#articleContentRight{
+	//margin-right:0px;
 }
 
 nav{
-	height: 45px;
+	height: 47px;
 	margin-top: 132;
 	background: black;
 	position: absolute;
@@ -109,16 +127,24 @@ nav a:hover li{
 }
 
 .mainAside{
-	width: 22%;
-	height: 800px;
+	width: 23%;
+	//height: 800px;
 	margin-right: 0;
 	margin-left: auto;
 	margin-top: 8px;
-	background-color: white;
+	//background-color: white;
+}
+
+.asides{
+	background-color:white;
+	padding:2px 2%;
+	margin-bottom:6px;
 }
 
 .mainFooter{
-	height: 45px;
+	height: 115px;
 	margin-top: 4px;
 	background-color:white;
+	width:100%;
+	float:left;
 }
