@@ -10,6 +10,10 @@ con.config(function($routeProvider) {
 		controller:'contactCtrl',
 		templateUrl:'contents/contact.html'
 	})
+		.when('/about', {
+		controller:'aboutCtrl',
+		templateUrl:'contents/about.html'
+	})
 		.when('/', {
 		redirectTo:'/home'
 	})
