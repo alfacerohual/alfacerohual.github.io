@@ -152,9 +152,9 @@ nav a:hover li{
 /*--------- Contact css ----------*/
 
 .pointerMap{
-	position:absolute;
-        left:693px;
-        top:343px;
+	position:relative;
+        left:120px;
+        top:149px;
         width:8px;
         border-radius: 150px;
         -webkit-border-radius: 150px;
@@ -168,10 +168,16 @@ nav a:hover li{
 	float:left;
 }
 
-.map{
+.mapWrapper{
 	width:300px;
 	height:300px;
 	float:left;
 	margin-top:12px;
 	margin-bottom:12px;
+}
+
+.map{
+	width:300px;
+	height:300px;
+	float:left;
 }
