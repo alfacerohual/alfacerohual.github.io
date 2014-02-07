@@ -14,6 +14,10 @@ con.config(function($routeProvider) {
 		controller:'aboutCtrl',
 		templateUrl:'contents/about.html'
 	})
+		.when('/products', {
+		controller:'productsCtrl',
+		templateUrl:'contents/product.html'
+	})
 		.when('/', {
 		redirectTo:'/home'
 	})
