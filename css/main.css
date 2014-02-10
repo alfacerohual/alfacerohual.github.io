@@ -186,19 +186,33 @@ nav a:hover li{
 
 .navSP{
 	background-color:white;
-	width:30%;
+	width:25%;
 	float:left;
-	padding-left:3%;
 }
 
 .navSP ul{
 	list-style:none;
 	padding:0px;
-	margin: 17px auto 9px auto;
+	margin: 0px auto 0px auto;
 }
 
 .navSP ul a{
 	text-decoration:none;
+}
+
+.navSP ul a li{
+	color:black;
+	padding-top:7px;
+	padding-bottom:7px;
+}
+
+.navSP ul a li:hover{
+	background-color:black;
+	color:white;
+}
+
+.navSP ul a li b{
+	padding-left:9%;
 }
 
 .contentSP{
