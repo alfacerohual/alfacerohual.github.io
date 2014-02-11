@@ -22,3 +22,24 @@ con.config(function($routeProvider) {
 		redirectTo:'/home'
 	})
 });
+
+/*-------------- Product loads -------------------*/
+
+function pLoads(prod){
+	if(prod=='e'){
+		var url = 'contents/products/electrodes.html';
+	}else if(prod=='w'){
+		
+	}else if(prod=='f'){
+
+	}
+	$.get(
+			url,
+		{
+			//varPage:null
+		},
+		function(data){
+			$('.oShow').html(data);
+		}
+	);
+}
