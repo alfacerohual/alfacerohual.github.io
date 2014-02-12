@@ -220,3 +220,78 @@ nav a:hover li{
 	width:15%;
 	float:left;
 }
+
+/*------------ product nav -------------*/
+
+#ps{
+	background-color:black;
+	width:73%;
+	height:47px;
+	float:left;
+	margin-left:1%;
+	text-decoration:none;
+	font-weight:bold;
+}
+
+#ps a li{
+	color:white;
+}
+
+#ps a:hover li{
+	color:black;
+	background-color:white;
+}
+
+/*----------- products content -----------*/
+
+.pWrapper{
+	float:left;
+	margin-left:1%;
+	margin-top:5px;
+	width:73%;
+}
+
+.pDiv{
+	background-color:white;
+	padding:5px 1% 5px 1%;
+}
+
+.lat{
+	width:38%;
+	float:left;
+}
+
+#meas{
+	margin-bottom:5px;
+}
+
+#pres{
+	margin-bottom:7px;
+}
+
+#desc{
+	float:left;
+	margin-bottom:7px;
+	margin-left:1%;
+	width:59%;
+}
+
+/* description products style */
+
+.par{
+
+}
+
+.tc{
+	width:49%;
+	margin-bottom:13px;
+	float:left;
+}
+
+#tcleft{
+
+}
+
+#tcright{
+	margin-left:2%;
+}
