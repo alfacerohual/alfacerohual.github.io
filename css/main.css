@@ -279,7 +279,7 @@ nav a:hover li{
 /* description products style */
 
 .par{
-
+	float:left;
 }
 
 .tc{
@@ -294,4 +294,16 @@ nav a:hover li{
 
 #tcright{
 	margin-left:2%;
+}
+
+.sTable{
+	width:26%;
+}
+
+table{
+	border:1px solid black;
+}
+
+#parTab{
+	margin-bottom:13px;
 }
