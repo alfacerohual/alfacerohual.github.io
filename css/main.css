@@ -313,3 +313,23 @@ table{
 #parTab{
 	margin-bottom:13px;
 }
+
+/*--------hide and show details---------*/
+
+.hd{
+	font-weight:bold;
+	color: blue;
+	text-decoration:none;
+}
+
+#sho{
+
+}
+
+#hid{
+	display:none;
+}
+
+.hidd{
+	display:none;
+}

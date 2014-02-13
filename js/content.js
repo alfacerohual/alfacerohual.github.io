@@ -23,6 +23,10 @@ con.config(function($routeProvider) {
 	})
 });
 
+con.controller('productsCtrl', function($scope){
+
+})
+
 /*-------------- Product loads -------------------*/
 
 function pLoads(prod){
@@ -64,4 +68,18 @@ function productsL(p){
 		}
 	);
 
+}
+
+/* showing and hiding product details */
+
+function hidsho(d){
+	if(d=='s'){
+		$('.hidd').show();
+		$('#sho').hide();
+		$('#hid').show();
+	}else{
+		$('.hidd').hide();
+		$('#sho').show();
+		$('#hid').hide();
+	}
 }
