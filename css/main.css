@@ -278,8 +278,13 @@ nav a:hover li{
 
 /* description products style */
 
+.imgProduct{
+	width:100%;
+	height:auto;
+}
+
 .par{
-	float:left;
+	//float:left;
 }
 
 .tc{
@@ -297,7 +302,8 @@ nav a:hover li{
 }
 
 .sTable{
-	width:26%;
+	width:1%;
+	font-size:59%;
 }
 
 table{
