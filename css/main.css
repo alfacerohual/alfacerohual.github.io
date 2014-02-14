@@ -323,13 +323,17 @@ table{
 }
 
 #sho{
-
+	background-color:white;
 }
 
 #hid{
 	display:none;
+	background-color:white;
 }
 
 .hidd{
 	display:none;
+	background-color:white;
+	float:left;
+	padding:13px 1%;
 }
