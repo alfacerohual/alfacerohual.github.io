@@ -18,30 +18,40 @@ con.config(function($routeProvider) {
 		controller:'productsCtrl',
 		templateUrl:'contents/product.html'
 	})
+		.when('/products/electrodes',{
+		controller:'pElectrodesCtrl',
+		templateUrl:'contents/products/electrodes.html'
+	})
+		.when('/products/wire', {
+		controller:'pWireCtrl',
+		templateUrl:'contents/products/wire.html'
+	})
+		.when('/products/fund', {
+		controller:'pFundCtrl',
+		templateUrl:'contents/products/fund.html'
+	})
+		.when('/products/electrodes/a63', {
+		controller:'a63Ctrl',
+		templateUrl:'contents/products/proList/a63.html'
+	})
 		.when('/', {
 		redirectTo:'/home'
 	})
 });
 
-$.urlParam = function(name){
-    var results = new RegExp('[\\?&amp;]' + name + '=([^&amp;#]*)').exec(window.location.href);
-    return results[1] || 0;
-}
-
 con.controller('productsCtrl', function($scope){
-	alert($.urlParam('hello'));
-})
+
+});
 
 /*-------------- Product loads -------------------*/
 
 function pLoads(prod){
 	if(prod=='e'){
-		var url = 'contents/products/electrodes.html';
-		var hs = "/#/products/electrodes";
+		var url = 'contents/product.html';
 	}else if(prod=='w'){
-		var url = 'contents/products/wire.html';
+		var url = 'contents/product.html';
 	}else if(prod=='f'){
-		var url = 'contents/products/fund.html';
+		var url = 'contents/product.html';
 	}
 	$.get(
 			url,
@@ -49,15 +59,15 @@ function pLoads(prod){
 			//varPage:null
 		},
 		function(data){
-			history.pushState(data,'',hs);
-			$('.oShow').html(data);
+			//history.pushState(data,'',hs);
+			$('.mInc').html(data);
 		}
 	);
 }
 
 function productsL(p){
 	if(p=='a63'){
-		var url = 'contents/products/proList/a63.html';
+		var url = /*'contents/products/proList/a63.html'*/'contents/products/electrodes.html';
 	}else if(p=='a78'){
 		var url = 'contents/products/proList/a78.html';
 	}else if(p=='a60'){
@@ -71,7 +81,7 @@ function productsL(p){
 			//varPage:null
 		},
 		function(data){
-			$('.pShow').html(data);
+			$('.sMInc').html(data);
 		}
 	);
 
