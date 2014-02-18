@@ -23,8 +23,13 @@ con.config(function($routeProvider) {
 	})
 });
 
-con.controller('productsCtrl', function($scope){
+$.urlParam = function(name){
+    var results = new RegExp('[\\?&amp;]' + name + '=([^&amp;#]*)').exec(window.location.href);
+    return results[1] || 0;
+}
 
+con.controller('productsCtrl', function($scope){
+	alert($.urlParam('hello'));
 })
 
 /*-------------- Product loads -------------------*/
@@ -32,6 +37,7 @@ con.controller('productsCtrl', function($scope){
 function pLoads(prod){
 	if(prod=='e'){
 		var url = 'contents/products/electrodes.html';
+		var hs = "/#/products/electrodes";
 	}else if(prod=='w'){
 		var url = 'contents/products/wire.html';
 	}else if(prod=='f'){
@@ -43,6 +49,7 @@ function pLoads(prod){
 			//varPage:null
 		},
 		function(data){
+			history.pushState(data,'',hs);
 			$('.oShow').html(data);
 		}
 	);
